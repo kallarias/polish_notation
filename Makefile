@@ -8,7 +8,7 @@ cpp:
 	cppcheck --enable=all --suppress=missingIncludeSystem *.c *.h
 
 graph: calculate.o graph.o input_valid.o pol_notat.o printing.o stack.o
-	gcc -o ../build/graph calculate.o graph.o input_valid.o pol_notat.o printing.o stack.o
+	gcc -o graph calculate.o graph.o input_valid.o pol_notat.o printing.o stack.o
 
 calculate.o: calculate.c
 	gcc $(CHECK) -o calculate.o calculate.c
